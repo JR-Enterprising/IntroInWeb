@@ -10,7 +10,17 @@ require_once './bin/bootloader.php';
 
 // write your code between these lines
 //---------------------------------
+function getPrice($jeans_amount,$shirts_amount,$shoes_amount,$skirts_amount)
+{
+    $total_price = $jeans_amount*30 + $shirts_amount*20 + $shoes_amount*25 + $skirts_amount*50;
 
+    return $total_price;
+}
+
+
+    $basket_price = getPrice(5,2,1,5);
+   echo("Your basket total is ");
+   echo($basket_price);
 
 
 //---------------------------------
