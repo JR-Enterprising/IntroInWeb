@@ -13,9 +13,9 @@
             $data = $db->query('SELECT input,result FROM Market_Array')->fetch_all();
             $err = 0;
             foreach($data as $try){
-                $try[1] = str_split($try[1]);
-                $basket = getPrice($try[1]);
-                if($basket != $try[2] || is_null($basket) || !isset($basket)){
+                $try[0] = $try[0] == '' ? [] : str_split($try[0]);
+                $basket = getPrice($try[0]);
+                if($basket != $try[1] || is_null($basket) || !isset($basket)){
                     $err++;
                 }
             }
