@@ -57,7 +57,7 @@ function getPrice($jeans_amount, $shirts_amount, $shoes_amount, $skirts_amount){
 =======
 <?php
 
-// set this to true when you think you are ready(only for CHAL_2).
+// set this to true when you think you are ready(only for CHAL_4).
 $checker = false;
 // the code will be auto-checked, but be aware, if you have bugs you will receive penality points! 
 // when you set $checker = true; you must think as if the application is public and available to users
@@ -108,6 +108,7 @@ function getPrice($jeans_amount, $shirts_amount, $shoes_amount, $skirts_amount){
     $basket_price = getPrice(4,1,3,2);
     echo("Your basket total is ");
     echo($basket_price);
+
 
 //---------------------------------
 >>>>>>> 03c4586abec821a761aa29072955360e0f4a72d1
