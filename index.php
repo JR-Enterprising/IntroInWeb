@@ -11,7 +11,7 @@ require_once './bin/bootloader.php';
 // write your code between these lines
 //---------------------------------
 function getPrice($array)
- {  $A = $B = $C = $D = $E = 0;
+ {  $A = $B = $C = $D = $E = $F = 0;
     for($i = 0 ; $i < count($array) ; $i++)
   {  
     if( $array[$i] == 'A')
@@ -24,6 +24,8 @@ function getPrice($array)
          $D++;
     else if ( $array[$i] == 'E')
          $E++;
+    else if ( $array[$i] == 'F')
+         $F++;
   }
     $total_price = (int)($A/5)*200 + (int)(($A%5)/3)*130 + (($A%5)%3)*50 +  $C*20 + $D*15 + $E*40;
   
@@ -33,10 +35,19 @@ function getPrice($array)
         $B --;
     }
     $total_price += (int)($B/2)*45 + ($B%2)*30 ;
+
+
+   if($F >= 3)
+    {
+        $F = $F-1;
+    }
+ 
+    $total_price += (int)($F/3) * 20 + ($F%3)*10;
+
   return $total_price;
  }
 
- $array = ['A','B','C','C','A','A','A','A','E','A','A','A','A'];
+ $array = ['A','B','D','F','F','F'];
  $result = getPrice($array);
  echo($result);
 
