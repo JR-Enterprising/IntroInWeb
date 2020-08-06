@@ -10,44 +10,35 @@ require_once './bin/bootloader.php';
 
 // write your code between these lines
 //---------------------------------
-/*
-function getPrice($jeans_amount,$shirts_amount,$shoes_amount,$skirts_amount)
-{
-    $total_price = $jeans_amount*30 + $shirts_amount*20 + $shoes_amount*25 + $skirts_amount*50;
+function getPrice($array)
+ {  $A = $B = $C = $D = $E = 0;
+    for($i = 0 ; $i < count($array) ; $i++)
+  {  
+    if( $array[$i] == 'A')
+        $A++;
+    else if ( $array[$i] == 'B')
+        $B++;
+    else if ( $array[$i] == 'C')
+         $C++;
+    else if ( $array[$i] == 'D')
+         $D++;
+    else if ( $array[$i] == 'E')
+         $E++;
+  }
+    $total_price = (int)($A/5)*200 + (int)(($A%5)/3)*130 + (($A%5)%3)*50 +  $C*20 + $D*15 + $E*40;
+  
+    while ($E >= 2 && $B >= 1 )
+    {
+        $E = $E - 2;
+        $B --;
+    }
+    $total_price += (int)($B/2)*45 + ($B%2)*30 ;
+  return $total_price;
+ }
 
-    return $total_price;
-}
-
-
-    $basket_price = getPrice(5,2,1,5);
-   echo("Your basket total is ");
-   echo($basket_price);
-*/
-
-
-function getPrice($jeans_amount,$shirts_amount,$shoes_amount,$skirts_amount)
-{
-if($jeans_amount >= 3 || $shirts_amount >= 2)
-{
-    $total_price = ((int)($jeans_amount/3)*130) + (($jeans_amount%3)*50) + (int)($shirts_amount/2)*45 + (($shirts_amount%2)*30) + $shoes_amount*20 + $skirts_amount*15;
-}
-else
-{
-$total_price = $jeans_amount*50 + $shirts_amount*30 + $shoes_amount*20 + $skirts_amount*15;
-}
-
-return $total_price;
-}
-
-$basket_price = getPrice(4,1,3,2);
-   echo("Your basket total is ");
-   echo($basket_price);
-
-
-
-
-
-
+ $array = ['A','B','C','C','A','A','A','A','E','A','A','A','A'];
+ $result = getPrice($array);
+ echo($result);
 
 //---------------------------------
 ?>
