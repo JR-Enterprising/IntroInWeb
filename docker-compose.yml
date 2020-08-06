@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 version: '3.5'
 
@@ -11,46 +10,3 @@ services:
       - .:/var/www/html
     ports:
       - 80:80
-=======
-
-version: '3.5'
-
-services:
-  webinar-app:
-    build:
-      context: '.'
-    container_name: webinar-app
-    volumes:
-      - ./src:/var/www/html
-    ports:
-      - 80:80
-    networks:
-      - webinar
-
-  webinar-db:
-    image: mysql:5.7
-    container_name: webinar-db
-    environment:
-      - MYSQL_ROOT_PASSWORD=root_pass
-      - MYSQL_DATABASE=db
-      - MYSQL_USER=user
-      - MYSQL_PASSWORD=pass
-    networks:
-      - webinar
-
-  webinar-phpmyadmin:
-    depends_on:
-      - webinar-db
-    image: phpmyadmin/phpmyadmin
-    container_name: webinar-pma
-    ports:
-      - '9000:80'
-    environment:
-      PMA_HOST: webinar-db
-      MYSQL_ROOT_PASSWORD: rot_pass
-    networks:
-      - webinar
-
-networks:
-  webinar:
->>>>>>> c13ecc4cb094925204fce1f6952e08a0266df511
