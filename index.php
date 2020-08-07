@@ -1,7 +1,7 @@
 <?php
 
-// set this to true when you think you are ready(only for CHAL_2).
-$checker = true;
+// set this to true when you think you are ready(only for CHAL_4).
+$checker = false;
 // the code will be auto-checked, but be aware, if you have bugs you will receive penality points! 
 // when you set $checker = true; you must think as if the application is public and available to users
 // so any bug can bring multiple issues.
@@ -34,6 +34,7 @@ function getPrice($jeans_amount, $shirts_amount, $shoes_amount, $skirts_amount){
 $basket_price = getPrice(5,7,3,2);
 echo("Your basket total is ");
 echo($basket_price);
+
 
 
 //---------------------------------
