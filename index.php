@@ -11,31 +11,52 @@ require_once './bin/bootloader.php';
 // write your code between these lines
 //---------------------------------
 
-function getPrice($jeans_amount, $shirts_amount, $shoes_amount, $skirts_amount){
-    $total_price = 0;
-    if($jeans_amount >= 3){
-        $total_price += ((int)($jeans_amount / 3)) * 130;
-        $total_price += ($jeans_amount % 3) * 50;
+function getPrice($order){
+        if(!is_array($order)){
+            return -1;
+        }
+        $store = ["A"=>50, "B"=>30, "C"=>20, "D"=>15, "E"=>40];
+        $counter = ["A"=>0, "B"=>0, "C"=>0, "D"=>0, "E"=>0];
+        $total = 0;
+        $contor = 0;
+        foreach($counter as $key=>$value){
+            foreach($order as $i_key){
+                if($key == $i_key){
+                    $counter[$key] += 1;
+                }
+            }
+        }
+        if($counter['E'] >= 2 && $counter['B'] >= 1){
+                $contor = (int)($counter['E'] / 2);
+                $counter['B'] -= $contor;
+                if($counter['B'] < 0){
+                    $counter['B'] = 0;
+                }
+        }
+        foreach($counter as $key=>$value){
+            if($key == 'A'){
+                $contor = 0;
+                $total += (int)($value / 5) * 200;
+                $contor = $value % 5;
+                $total += (int)($contor / 3) * 130 + ($contor % 3) * 50;
+                $contor = 0;
+            }
+            if($key == 'B'){
+                $total += (int)($value / 2) * 45 + ($value % 2) * 30;
+            }
+            if($key == 'C'){
+                $total += $value * 20;
+            }
+            if($key == 'D'){
+                $total += $value * 15;
+            }
+            if($key == 'E'){
+                $total += $value * 40;
+            }
+        }
+        return $total;
     }
-    else{
-        $total_price += $jeans_amount * 50;
-    }
-    if($shirts_amount >= 2){
-        $total_price += ((int)($shirts_amount / 2)) * 45;
-        $total_price += ($shirts_amount % 2) * 30;
-    }
-    else{
-        $total_price += $shirts_amount * 30;
-    }
-    $total_price += $shoes_amount * 20 + $skirts_amount * 15;
-    return $total_price;
-}
-
-$basket_price = getPrice(5,7,3,2);
-echo("Your basket total is ");
-echo($basket_price);
-
-
+    echo getPrice(['A','B','C','C','A','A','A','A','E','A','A','A','A']);
 
 //---------------------------------
 ?>
