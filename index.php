@@ -1,7 +1,7 @@
 <?php
 
 // set this to true when you think you are ready(only for CHAL_4).
-$checker = false;
+$checker = true;
 // the code will be auto-checked, but be aware, if you have bugs you will receive penality points! 
 // when you set $checker = true; you must think as if the application is public and available to users
 // so any bug can bring multiple issues.
@@ -39,15 +39,26 @@ function getPrice($array)
     
    }
 
-    $total_price += (int)($B/2)*45 + ($B%2)*30 ;
+     if( $F == 3 || $F == 4)
+      $F --;
+   
+
+     if( $F > 4 )
+          {
+            $total_price -= ((int)($F/3))*10;
+          }
+   
+
+    $total_price += (int)($B/2)*45 + ($B%2)*30 + $F*10;
     
 
   return $total_price;
  }
 
- $array = [ 'E','E','E','E','B','B' ];
+ $array = [ 'A','B','D','F','F','F'];
  $rez = getPrice($array);
+ 
  echo($rez);
-
+ 
 //---------------------------------
 ?>
