@@ -1,0 +1,28 @@
+#emailrow{
+    margin-top: 10em;
+    margin-bottom: 10em;
+    height: 18em;
+    background-color: #d1e4f3;
+}
+::placeholder{
+    opacity: 0.1;
+}
+#txtemail{
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 80%);
+    background-color: #d1e4f3;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: x-large;
+    color: rgba(0, 0, 0, 80%);
+
+}
+#submitemail{
+    padding: 2em 5em;
+    margin-top: 2.37em;
+    border: 0;
+    background-color: rgba(0, 0, 0, 80%);
+    color: rgba(255, 255, 255, 80%);
+    font-family: 'Rubik', sans-serif;
+}
+button:focus,input { outline: none; }

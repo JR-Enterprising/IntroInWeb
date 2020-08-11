@@ -1,0 +1,122 @@
+
+.bigimg{
+    margin-top: 2em;
+    width: 100%;
+    padding: 0;
+}
+.smallimg{
+    margin-top: 2em;
+    width: 100%;
+    padding: 0;
+
+}
+.img-fluid{
+    border-radius: 0;
+    padding: 0;
+    background-color: inherit;
+    border:0.1px solid rgba(65, 65, 65, 5%);
+    width: 56%;
+}
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.clicked{
+    opacity: 0.6;
+}
+.rating{
+    display: inline-flex;
+}
+.number_rating{
+    padding-left: 2em;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8em;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+.name{
+    font-size: 3em;
+    font-weight: bolder;
+    opacity: 0.9;
+    letter-spacing: 10px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+}
+
+.price{
+    font-size: 1.5em;
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.9;
+}
+.discounted_price{
+    text-decoration: line-through;
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.2;
+    padding-left: 1em;
+}
+.nav_links{
+    display: inline;
+    color: rgba(0, 0, 0, 60%);
+    font-family: 'Rubik', sans-serif;
+    font-size: small;
+}   
+.nav_links:hover{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 60%);
+    font-family: 'Rubik', sans-serif;
+}
+#nume_cap{
+    color: #efd78a;
+}
+#share, #twitter, #facebook, #pinterest, #instagram{
+    padding: 1em;
+    text-decoration: none;
+    color:  rgba(0, 0, 0, 40%);
+}
+#share:hover, #twitter:hover, #facebook:hover, #pinterest:hover, #instagram:hover{
+    padding: 1em;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Rubik', sans-serif;
+}
+.txtbtn{
+    width: 33%;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 10%);
+    background-color: rgb(234, 235, 239);
+    font-family: 'Rubik', sans-serif;
+    color: rgba(0, 0, 0, 60%);
+    padding-bottom: 2em;
+}
+.txtbtn::after {
+    content: '';
+    position: relative;
+    top:2.1em;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+#txtbtn2{
+    position: relative;
+    right: 10px;
+}
+#txtbtn3{
+    position: relative;
+    right: 16px;
+}
+#textchange{
+    padding-top: 2em;
+}
+.clickz{
+    color: rgba(0, 0, 0, 80%);
+    border: none;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 60%); */
+}
+.clickz::after{
+    width: 100%;
+}
+button:focus { outline: none; }

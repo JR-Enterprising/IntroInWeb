@@ -1,0 +1,122 @@
+
+#quantity-col{
+    margin-top: 8em;
+}
+.button-minus{
+    border: 1px solid  rgba(0,0,0, 10%);
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 10px;
+    background-color: rgb(234, 235, 239);
+    border-right: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+}
+.button-plus{
+    border: 1px solid  rgba(0,0,0, 10%);
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 10px;
+    background-color: rgb(234, 235, 239);
+    border-left: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+}
+.quantity-field{
+    border: 1px solid rgba(0,0,0, 10%);
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 12px 10px 9px 10px;
+    background-color: rgb(234, 235, 239);
+    font-family: 'Rubik', sans-serif;
+    border-left: 0;
+    border-right: 0;
+    font-weight: bolder;
+}
+input[type="button"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-group {
+    clear: both;
+    margin: 15px 0;
+    position: relative;
+}
+
+.input-group input[type='button'] {
+    background-color: #eeeeee;
+    min-width: 38px;
+    width: auto;
+    transition: all 300ms ease;
+}
+
+.input-group .button-minus,
+.input-group .button-plus {
+    font-weight: bold;
+    height: 38px;
+    padding: 0;
+    width: 38px;
+    position: relative;
+}
+
+.input-group .quantity-field {
+    position: relative;
+    height: 38px;
+    left: -6px;
+    text-align: center;
+    width: 62px;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 0 5px;
+    resize: vertical;
+}
+
+.button-plus {
+    left: -13px;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+}
+.input-group{
+    display: block;
+}
+.submit-quantity{
+    margin-top: 4em;
+    display: inline;
+}
+
+#submit-quantity{
+    /* display: inline-block; */
+    padding: 2em 4em 2em 4em;
+    background-color: rgba(0,0,0, 70%);
+    color: white;
+    border: 1px;
+    font-family: 'Rubik', sans-serif;
+}
+#submit-quantity:hover{
+    background-color: rgba(0,0,0, 100%);
+}
+.addtowish-quantity{
+    display: inline;
+}
+#addtowish{
+    padding: 1em 3em 1em 3em;
+    background-color:white;
+    font-weight: bold;
+    border: 1px solid white;
+    color: rgba(0,0,0, 70%);
+}
+#addtowish:hover{
+    color: rgba(0,0,0, 100%);
+}

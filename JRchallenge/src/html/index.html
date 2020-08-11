@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/ratingstar.css">
+    <link rel="stylesheet" href="styles/middlecontent.css">
+    </head>
+    <body>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <ul class="list-group list-group-horizontal"> -->
+                    <div class="col-sm-1"><li class="list-group-item pl-sm-2 pt-sm-2"><a href="#"><img src="images/hamburger.png" alt="menu"></a>
+                    </li></div>
+                    <div class="col-sm-2"><li class="list-group-item border-right-0 pl-sm-3"><a class="cell"
+                    href="#"><img src="images/logo-stile.png" alt="Logo"></a></li></div>
+                    <div class="col-sm-1"><li class="list-group-item border-left-0 border-right-0"></li></div>
+                    <div class="col-sm-1"><li class="list-group-item border-left-0 border-right-0"><a class="cell" href="#">Collection</a></li></div>
+                    <div class="col-sm-1"><li class="list-group-item border-left-0 border-right-0"><a class="cell" href="#">Catalog</a></li></div>
+                    <div class="col-sm-1"><li class="list-group-item border-left-0 border-right-0"><a class="cell" href="#">About Us</a></li></div>
+                    <div class="col-sm-1"><li class="list-group-item border-left-0 border-right-0"><a class="cell" href="#">Blog</a></li></div>
+                    <div class="col-sm-1"><li class="list-group-item border-left-0"></li></div>
+                    <div class="col-sm-1"><li class="list-group-item  pt-sm-3"><a class="cell" href="#"><img src="images/glass1.png" alt="chair"></a></li></div>
+                    <div class="col-sm-1"><li class="list-group-item pl-sm-2"><a class="cell" href="#"><img src="images/person.png" alt="chair">My account</a></li></div>
+                    <div class="col-sm-1"><li class="list-group-item pl-sm-3 pt-sm-4"><a class="cell" href="#"><img src="images/cart.png" alt="chair">Cart</a></li></div>
+                    
+                <!-- </ul> -->
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid">
+            <div class = "row mt-sm-5 mb-sm-5">
+                <div class="col-sm-2">
+                </div>
+                <div class = "col-sm-10">
+                    <a href="#">asdasda/121322312/asdasdsadas</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="col-sm-4 pr-sm-0">
+                    <div class = "bigimg">
+                        <img id='bigIMG' class ="responsive" src="images/chic_sofa/1.PNG" alt="chair">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class = "smallimg">
+                        <img id="0" class = "img-fluid border-bottom-0" src="images/chic_sofa/1.PNG"  onclick="myFunction(this)" alt="img">
+                        <img id="1" class = "img-fluid border-bottom-0" src="images/chic_sofa/2_550x678.png"  onclick="myFunction(this)" alt="img">
+                        <img id="2" class = "img-fluid border-bottom-0" src="images/chic_sofa/3.png"  onclick="myFunction(this)" alt="img">
+                        <img id="3" class = "img-fluid border-bottom-0" src="images/chic_sofa/4.jpg"  onclick="myFunction(this)" alt="img">
+                        <img id="4" class = "img-fluid border-bottom-0" src="images/chic_sofa/5.jpg"  onclick="myFunction(this)" alt="img">
+                        <img id="5" class = "img-fluid border-bottom-0" src="images/chic_sofa/6.jpg"  onclick="myFunction(this)" alt="img">
+                        <img id="6" class = "img-fluid" src="images/chic_sofa/7.jpg"  onclick="myFunction(this)" alt="img">
+
+                        <script>
+                            function myFunction(smallImage){
+                                var fullImg = document.getElementById("bigIMG");
+                                fullImg.src = smallImage.src;
+                                for(var i=0;i<7;i++)
+                                {
+                                    var temp = document.getElementById(i);
+                                    temp.className = 'img-fluid border-bottom-0';
+                                }
+                                smallImage.className += " clicked";
+                            }
+                        </script>
+                        </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="col-sm pt-sm-5">
+                        <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p class ="name">CHIC SOFA</p>
+                    </div>
+                    <div class="col-sm">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </body>
+</html>
