@@ -42,7 +42,6 @@ function getPrice($array)
      if( $F == 3 || $F == 4)
       $F --;
    
-
      if( $F > 4 )
           {
             $total_price -= ((int)($F/3))*10;
