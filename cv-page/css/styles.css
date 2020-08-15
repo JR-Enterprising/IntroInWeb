@@ -1,0 +1,57 @@
+body { 
+    background-color: lightskyblue;
+    text-align: center;
+}
+.work{
+    background-color: dodgerblue ;
+    width: 40%;
+    padding:10px;
+    margin:auto;
+    text-align: center;
+}
+.description
+{
+    font-weight: bold;
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    margin:auto;
+    text-align: center;
+}
+.about{
+    font-weight: bold;
+    width: 320px;
+    padding: auto;
+    margin:auto;
+    text-align: center;
+}
+.img{
+   position: center;
+   top: 770px;
+   left: 680px;
+}
+.begin{
+    color:black;
+    position: relative;
+    top:150px;
+    font-style: oblique;
+}
+.img2{
+    position: absolute;
+    top:1170px;
+    left:600px;
+}
+
+.hi {
+    
+        font-weight:900;
+        font-size: x-large;
+        color: black;
+    
+    
+}
+.img3{
+    position: absolute;
+    top:1200px;
+    left: 710px;
+}
