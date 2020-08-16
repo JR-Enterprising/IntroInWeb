@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 You have the following C++ code. 
 Translate it into PHP inside index.php in the indicated place.
 When you are done push the changes to git and then proceed to CHAL_2.txt
@@ -22,3 +23,29 @@ int main()
     int basket_price = getPrice(5,2,1,5);
     cout<<"Your basket total is "<<basket_price;
 }
+=======
+You have the following C++ code. 
+Translate it into PHP inside index.php in the indicated place.
+When you are done push the changes to git and then proceed to CHAL_2.txt
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int getPrice(int jeans_amount, int shirts_amount, int shoes_amount, int skirts_amount){
+
+    int total_price = jeans_amount*30 + shirts_amount*20 + shoes_amount*25 + skirts_amount*50;
+
+    return total_price;
+
+}
+
+
+int main()
+{
+    int basket_price = getPrice(5,2,1,5);
+    cout<<"Your basket total is "<<basket_price;
+}
+>>>>>>> origin/curs_4

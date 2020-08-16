@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 version: '3.5'
 
@@ -9,4 +10,17 @@ services:
     volumes:
       - .:/var/www/html
     ports:
+=======
+
+version: '3.5'
+
+services:
+  webinar-app:
+    build:
+      context: '.'
+    container_name: webinar-app
+    volumes:
+      - .:/var/www/html
+    ports:
+>>>>>>> origin/curs_4
       - 80:80

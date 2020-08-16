@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Round 5
 
 Create a page based on the design found in design.png image in cv-page.
@@ -11,4 +12,19 @@ Before you begin working on this you should complete the task mentioned in the c
 Observations:
   - Add a title to the HTML page;
   - Use the resources links from the resources slide from the course;
+=======
+Round 5
+
+Create a page based on the design found in design.png image in cv-page.
+
+Use cv-page/index.html for all HTML related code and cv-page/css/styles.css file for all CSS related code.
+
+Inside cv-page/images you have access to all related images.
+
+Before you begin working on this you should complete the task mentioned in the course (https://geddski.teachable.com/p/flexbox-zombies).
+
+Observations:
+  - Add a title to the HTML page;
+  - Use the resources links from the resources slide from the course;
+>>>>>>> origin/curs_4
   - Install prettier using the information from the course;
