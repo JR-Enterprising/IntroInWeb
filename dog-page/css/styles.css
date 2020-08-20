@@ -1,0 +1,143 @@
+.header{
+    background-color: #ff4d69;
+    padding-bottom: 8em;
+}
+.content{
+    padding-top: 12%;
+    background-color:white;
+    position: relative;
+    text-align: center;
+    padding-bottom: 3em;
+}
+.bottom{
+    margin-top: 5%;
+}
+#head2{
+    color: white;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 500;
+    font-size: 2.5vw;
+}
+#headtxt1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin-top: 1.5em;
+    font-weight: 500;
+    font-size: 2.7vw;
+}
+.header-btns{
+    display: flex;
+}
+#btn1{
+    color: white;
+    background-color: #343a41;
+    font-size: 1.2vw;
+}
+#btn1:hover{
+    background-color: black;
+}
+#btn2{
+    border-color: white;
+    color: white;
+    font-size: 1.2vw;
+
+}
+#iph{
+    transform: rotate(28deg);
+    position: absolute;
+    margin-top: 5em;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 30%;
+    color: rgba(255, 255, 255, 40%);
+    font-size: 1vw;
+}
+#lnk1{
+    color: rgba(255, 255, 255, 40%);
+    font-family: 'Playfair Display', serif;
+}
+#lnk1:hover{
+    text-decoration: none;
+    color: white;
+}
+.icons{
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: center;
+    color: #ef8172;
+}
+.contenttxt1{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.contenttxt2{
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    font-size: 0.9vw;
+}
+
+#bottom-titlu{
+    font-size: 3vw;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+#bottom-txt{
+    display: flex;
+    justify-content: center;
+    opacity: 0.6;
+    font-size: 1.1em;
+}
+.lower{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.card{
+    font-size: 2.2vw;
+    width: 25vw;    
+}
+.card-header{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    background-color: #f7f7f7;
+
+
+}
+.card-title{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 3vw;
+}
+.card-body{
+    background-color: white;
+}
+.card-text{
+    text-align: center;
+    list-style-type: none;
+    font-size: 0.5em;
+    opacity: 0.6;
+}
+li{
+    padding: 5px 0;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+#lower-btn{
+    background-color: black;
+    opacity: 0.6;
+}
+#lower-btn:hover{
+    opacity: 1;
+}
