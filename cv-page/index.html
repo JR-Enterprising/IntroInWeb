@@ -1,92 +1,86 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-    body {
-        background-color: #e36549;
-        text-align: center;
-        }
-        hi{
-            font-style: italic;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            color: purple;
-        }
-
-        1_img {
-            margin: auto;
-            border-top: 0px;
-            padding-top: 0px;
-            max-height: 100%;
-
-        }
-        2_img{
-            width: 10px ;
-            height: 10px ;
-
-        }
-
-        hi_2{
-            font-size: 5px;
-            font-family: Cambria;
-            text-align: center;
-            font-style: bold:
-
-        }
-        box{
-            
-            background-color:#ffcc00;
-            margin: auto;
-            width: 90%;
-            margin-top: 100px;
-            border-top: 100px;
-            padding-top: 100px;
-            padding: 50px;
-            text-align: center;
-            font-family: Cambria;
-            font-style: bold;
-            font-size: large;
-        }
-        some_flexx{
-            display:flex;
-            justify-content: center;
-            align-items: flex-end;
-            font-family: Cambria;
-            font-style: bold;
-            font-style: medium;
-
-        }
-        some_flexx2{
-            display:flex;
-            justify-content: center;
-            align-items: flex-start;
-            font-family: Cambria;
-            font-style: bold;
-            font-style: medium;
-
-      }</style>
     <link href="./css/styles.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My page</title>
   </head>
-  <div class= "hi">
-    <p>I'm Iulia.</p>
-    <p>a web designer.</p>
-  </div>
-  <div class="1_img">
-    <img src=https://tip.touch.com.lb/wp-content/uploads/2018/07/Design-Thinking-Edited.jpg>
-  </div>
+  <style>
+    body {
+        background-color: #00ffcc;
+        text-align: center;
+        }
+    .container{
+      position:relative;
+      text-align: center;
+      color:white;
+    }
+    .centered{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family:fantasy;
+      font-size:xx-large;
+      color:#00004d;
+    }
+    .icon {
+    margin: auto;
+    padding: 100px;
+    height: auto;
+    
+  }
+  h3{
+    color:#00004d;
+    font-family:fantasy;
+      font-size:xx-large;
+      margin-block-start: -70px;
+    
+  }
+  h1{
+    color:#3333ff;
+    font-family:fantasy;
+      font-size:large;
+      margin-block-start: -30px;
+  }
+ .box {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid #ff6600;
+  padding: 50px;
+  margin: 20px ;
+  color:#00004d;
+    font-family:fantasy;
+      font-size:xx-large;
+}
+.left{
+  margin-left:-400px;
+}
+.right{
+  margin-right:-600px;
+  margin-block-start:-80px;
+}
+
+  </style>
   <body>
-    <div class="2_img"> <img src=https://freeiconshop.com/wp-content/uploads/edd/person-girl-flat.png></div>
-    <div class="hi_2"> <h1 style="text-align:center"> Hello!</h1>
-    <p> I'm a web designer from Giurgiu, Romania.<br>
-  I moved in Bucharest one year ago to study maths ans informatics.<br>
-After a while I started to be interested in web development.</p></div>
-<div class="box"><h1>What I can do</h1></div>
-<div class="some_flexx"><img src=https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/fa/e15e80504811e6bcaf7158d37ab7ca/LightBulb.jpg?auto=format%2Ccompress&dpr></div>
-<div class="some_flexx2"><p>I can do whatever i have in my mind if I don't feel lazy at that moment.<br></p></div>
+    <div class="container">
+      <img src="https://marketingweek.imgix.net/content/uploads/2015/03/Digital_tech_breaker.png?auto=compress,format&q=60&w=980&h=400" alt="computer" style="width:100%">
+      <div class="centered">I'm Iulia,<br>a web designer!</div>
+    </div>
+    <div class="icon">
+      <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-369-456321.png" alt="avatar"  width="150px" height="150px">
+    </div>
+  <center><h3 >Hello!</h3>
+    <h1>I'm a web designer from Giurgiu, Romania.<br>
+      I moved in Bucharest one year ago to study maths ans informatics.<br>
+    After a while I started to be interested in web development.</h1>
+ </center>
+<center> <div class="box">What I can do</div> </center>
+<div class="left"><img src="https://cdn.iconscout.com/icon/free/png-512/avatar-369-456321.png" alt="avatar"  width="150px" height="150px">
+<img src="https://cdn.iconscout.com/icon/free/png-256/keyboard-1356362-1235306.png" alt="keyboard" width="150px" height="150px"> </div>
+
+<div class="right"> <h1>I can do whatever i have in my mind if I don't feel lazy at that moment.</h1></div>
   </body>
 </html>
 
