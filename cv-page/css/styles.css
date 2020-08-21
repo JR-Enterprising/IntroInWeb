@@ -1,65 +1,54 @@
-
-    body {
-        background-color: #e36549;
+body {
+        background-color: #00ffcc;
         text-align: center;
         }
-        hi{
-            font-style: italic;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            color: purple;
-        }
-
-        1_img {
-            margin: auto;
-            border-top: 0px;
-            padding-top: 0px;
-            max-height: 100%;
-
-        }
-        2_img{
-            width: 10px ;
-            height: 10px ;
-
-        }
-
-        hi_2{
-            font-size: 5px;
-            font-family: Cambria;
-            text-align: center;
-            font-style: bold:
-
-        }
-        box{
-            
-            background-color:#ffcc00;
-            margin: auto;
-            width: 90%;
-            margin-top: 100px;
-            border-top: 100px;
-            padding-top: 100px;
-            padding: 50px;
-            text-align: center;
-            font-family: Cambria;
-            font-style: bold;
-            font-size: large;
-        }
-        some_flexx{
-            display:flex;
-            justify-content: center;
-            align-items: flex-end;
-            font-family: Cambria;
-            font-style: bold;
-            font-style: medium;
-
-        }
-        some_flexx2{
-            display:flex;
-            justify-content: center;
-            align-items: flex-start;
-            font-family: Cambria;
-            font-style: bold;
-            font-style: medium;
-
-        }
+    .container{
+      position:relative;
+      text-align: center;
+      color:white;
+    }
+    .centered{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family:fantasy;
+      font-size:xx-large;
+      color:#00004d;
+    }
+    .icon {
+    margin: auto;
+    padding: 100px;
+    height: auto;
+    
+  }
+  h3{
+    color:#00004d;
+    font-family:fantasy;
+      font-size:xx-large;
+      margin-block-start: -70px;
+    
+  }
+  h1{
+    color:#3333ff;
+    font-family:fantasy;
+      font-size:large;
+      margin-block-start: -30px;
+  }
+ .box {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid #ff6600;
+  padding: 50px;
+  margin: 20px ;
+  color:#00004d;
+    font-family:fantasy;
+      font-size:xx-large;
+}
+.left{
+  margin-left:-400px;
+}
+.right{
+  margin-right:-600px;
+  margin-block-start:-80px;
+}
