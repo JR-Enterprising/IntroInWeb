@@ -1,3 +1,4 @@
-Create website in wordpress that have at least 4 pages with dynamic content.
+1. Create website in wordpress that have at least 4 pages with dynamic content.
 The theme of the website is on your choice.
 
+2. Insert custom styles (css) using the "wordpress way". (hint: wp_enqueue)
