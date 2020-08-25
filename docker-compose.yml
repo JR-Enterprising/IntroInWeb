@@ -1,0 +1,62 @@
+version: '3.5'
+
+services:     
+
+    introweb-db:
+        container_name: 'introweb-db'
+        image: mysql:5.7
+        volumes:
+            - ./docker/mysql/run/var:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: rootpass
+            MYSQL_DATABASE: introweb
+            MYSQL_USER: user
+            MYSQL_PASSWORD: pass
+        networks:
+            introweb-backend-network:
+                aliases:
+                    - introweb-db
+
+    introweb-wp:
+        depends_on:
+           - introweb-db
+        container_name: 'introweb-wp'
+        image: wordpress:latest
+        volumes:
+            - ./:/var/www/html
+            - ./docker/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+        ports:
+            - "80:80"
+        restart: always
+        environment:
+            WORDPRESS_DB_HOST: introweb-db
+            WORDPRESS_DB_NAME: introweb
+            WORDPRESS_DB_USER: user
+            WORDPRESS_DB_PASSWORD: pass
+        networks:
+            introweb-backend-network:
+                aliases:
+                    - introweb-wp
+    
+    introweb-pma:
+        depends_on: 
+            - introweb-db
+        image: phpmyadmin/phpmyadmin
+        container_name: introweb-pma
+        volumes:
+            - ./docker/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+        ports:
+            - '9000:80'
+        environment:
+            PMA_HOST: introweb-db
+            MYSQL_ROOT_PASSWORD: rootpass
+        networks:
+            introweb-backend-network:
+                aliases:
+                    - introweb-pma
+volumes:
+    db_data: {}
+
+networks:
+    introweb-backend-network:
+        name: introweb-backend-network
