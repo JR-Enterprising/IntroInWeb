@@ -1,4 +1,0 @@
-webinar-db
-webinar-pma
-webinar-app
-all 3 containers are running
