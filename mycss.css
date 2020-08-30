@@ -1,0 +1,13 @@
+p {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+}
+body {
+  color: white;
+  font-size: large;
+}
+.wp-block-embed__wrapper {
+  position: relative;
+  margin: 10%;
+}
