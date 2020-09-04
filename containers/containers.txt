@@ -1,3 +1,0 @@
-webindar-app
-webinar-pma
-webinar-db
