@@ -181,18 +181,46 @@ function hestia_check_passed_time( $no_seconds ) {
 function hestia_setup_theme() {
 	return;
 }
-//supercars
-function enqueue_css(){
-	if(is_page(161) || is_page(192) || is_page(206) || is_page(216)){
-		wp_enqueue_style('mycss','/mycss.css',false);
-	}
+// //supercars
+// function enqueue_css(){
+// 	if(is_page(161) || is_page(192) || is_page(206) || is_page(216)){
+// 		wp_enqueue_style('mycss','/mycss.css',false);
+// 	}
 	
-}
-add_action('wp_enqueue_scripts', 'enqueue_css');
-//classiccars
-function enq_css(){
-	if(is_page(234) || is_page(273) || is_page(282) || is_page(293)){
-		wp_enqueue_style('classic','/classic.css',false);
-	}
-}
-add_action('wp_enqueue_scripts', 'enq_css');
+// }
+// add_action('wp_enqueue_scripts', 'enqueue_css');
+// //classiccars
+// function enq_css(){
+// 	if(is_page(234) || is_page(273) || is_page(282) || is_page(293)){
+// 		wp_enqueue_style('classic','/classic.css',false);
+// 	}
+// }
+// add_action('wp_enqueue_scripts', 'enq_css');
+// //carousel
+// function enq_css_carousel(){
+// 	// if(is_page_template( 'page-templates/template-carousel.php' )){
+// 		if ( is_page_template( 'templates/template-carousel.php' ) ){
+// 		// wp_enqueue_style('carousel','/assets/scss/carousel.css',false);
+// 			addStyleScript('carousel','/assets/css/carousel.css','style');
+// 		// wp_register_style('carousel', plugins_url('carousel.css', __FILE__));
+// 		// wp_enqueue_style('carousel');
+// 	}
+// }
+// add_action('wp_enqueue_scripts', 'enq_css_carousel');
+
+
+// // add_action( 'wp_enqueue_scripts', function() {
+// // 	if ( is_page_template( 'templates/template-carousel.php' ) ){
+// // 			addStyleScript('carousel','/assets/css/carousel.css','style');
+// // 	}
+// // });
+
+
+
+
+
+// // add_action('wp_enqueue_scripts','wpshout_enqueue_styles');
+// // function wpshout_enqueue_styles() {
+// // 	if(is_page(317)){
+// // 		$file_url = plugins_url('carousel.css',__FILE__ );
+// // 		wp_enqueue_style('sp_sytlesheet',$file_url);
